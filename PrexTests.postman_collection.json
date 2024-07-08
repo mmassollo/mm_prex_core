@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "0938631d-7889-4907-a808-1f6cec4ee29c",
+		"name": "PrexTests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36785451"
+	},
+	"item": [
+		{
+			"name": "new_client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client_name\": \"Juan Perez\",\r\n    \"birth_date\": \"2000-01-20\",\r\n    \"document_number\": \"12345678\",\r\n    \"country\": \"AR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/new_client",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"new_client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_credit_transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"credit_amount\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/new_credit_transaction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"new_credit_transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new_debit_transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"debit_amount\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/new_debit_transaction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"new_debit_transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client_balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/client_balance/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"client_balance",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store_balances",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/store_balances",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_balances"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
